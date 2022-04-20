@@ -22,6 +22,13 @@ dependencies:
   #  so we have to modify the native [runner.cpp] or some other file
   flutter_acrylic: ^1.0.0+2
 
+  # dynamic design to code scaling 
+  flutter_screenutil: ^5.4.0+1
+
+  google_fonts: ^2.3.1
+  flutter_svg: ^1.0.3
+  percent_indicator: ^4.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -31,4 +38,7 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+  
+  assets:
+    - ./assets/images/
 
