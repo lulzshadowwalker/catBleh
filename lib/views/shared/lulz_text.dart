@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Responsive text
 class LulzText extends StatelessWidget {
+  /// ! not really useful now that I removed the [flutter_screenUtil] package
   const LulzText({
     Key? key,
     required String text,

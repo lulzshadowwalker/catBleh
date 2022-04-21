@@ -8,10 +8,10 @@ class DHome extends StatefulWidget {
 }
 
 class _DHomeState extends State<DHome> {
-  final double _height = LulzConst.windowHeight.h;
-  final double _width = LulzConst.windowWidth.w;
-  final double _buttonHeight = 70.h;
-  final double _buttonWidth = 342.w;
+  final double _height = LulzConst.windowHeight;
+  final double _width = LulzConst.windowWidth;
+  final double _buttonHeight = 70;
+  final double _buttonWidth = 342;
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -22,15 +22,11 @@ class _DHomeState extends State<DHome> {
 
     /// [bitsdojo_window]
     doWhenWindowReady(() {
-      /// this doesn't make sense does it :D it works who cares
-      ///  basically, the actual perceived window [LulzContainer] in the [Home]
-      ///  widget gets resized dynamically properly
       Size initialSize = Size(_width, _height);
 
       appWindow
         ..minSize = initialSize
         ..maxSize = initialSize
-        ..size = initialSize
         ..alignment = Alignment.center
         ..show();
     });
@@ -45,8 +41,9 @@ class _DHomeState extends State<DHome> {
               top: 0,
               child: Form(
                   key: _formKey,
-                  child: const MainHomeWindow(
-                    child: HomeBody(),
+                  child: MainHomeWindow(
+                    child: const HomeBody(),
+                    cutout: _buttonHeight * 0.5,
                   ))),
           Positioned(
             bottom: 0,
@@ -54,7 +51,6 @@ class _DHomeState extends State<DHome> {
             child: LulzButton(
               onTap: () => _onTap(context),
               text: 'Check now',
-              textWidth: 112.w,
               width: _buttonWidth,
               height: _buttonHeight,
             ),
@@ -72,7 +68,7 @@ class _DHomeState extends State<DHome> {
     if (_formKey.currentState!.validate()) {
       MaterialPageRoute _route =
           MaterialPageRoute(builder: ((context) => const DScanning()));
-      Navigator.of(context).push(_route);
+      Navigator.pushReplacement(context, _route);
     }
   }
 }

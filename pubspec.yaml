@@ -22,8 +22,8 @@ dependencies:
   #  so we have to modify the native [runner.cpp] or some other file
   flutter_acrylic: ^1.0.0+2
 
-  # dynamic design to code scaling 
-  flutter_screenutil: ^5.4.0+1
+  # # dynamic design to code scaling 
+  # flutter_screenutil: ^5.4.0+1
 
   google_fonts: ^2.3.1
   flutter_svg: ^1.0.3
@@ -34,6 +34,19 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^1.0.0
+
+  # packaging the application to the Windows platform
+  msix: ^3.5.1
+
+msix_config:
+display_name: catBleh
+publisher_display_name: some dumbass fucking developer
+identity_name: company.ducks.meow
+msix_version: 1.0.0.0
+logo_path: C:\path\to\logo.png
+trim_logo: false
+# hehe, imma keep this KEKW
+capabilities: internetClient, location, microphone, webcam
 
 flutter:
 

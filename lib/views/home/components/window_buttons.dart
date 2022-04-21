@@ -7,7 +7,7 @@ class WindowButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        15.horizontalSpace,
+        const SizedBox(width: 15),
 
         /// Close button
         LulzWindowControlButton(
@@ -15,7 +15,7 @@ class WindowButtons extends StatelessWidget {
           onTap: appWindow.close,
         ),
 
-        10.horizontalSpace,
+        const SizedBox(width: 10),
 
         /// Minimize button
         LulzWindowControlButton(

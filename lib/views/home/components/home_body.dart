@@ -6,7 +6,7 @@ class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 75.w, vertical: 25.h),
+      padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 25),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -15,6 +15,7 @@ class HomeBody extends StatelessWidget {
             'Better safe than sorry',
             style: GoogleFonts.cookie(fontSize: 48),
           ),
+          const SizedBox(height: 20),
 
           /// * body
           const HomeBodyInputFields()
@@ -23,4 +24,3 @@ class HomeBody extends StatelessWidget {
     );
   }
 }
-

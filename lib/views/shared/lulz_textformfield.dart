@@ -1,7 +1,6 @@
-import 'package:catbleh/helpers/lulz_imports.dart';
+import '../../helpers/lulz_imports.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LulzTextFormField extends StatelessWidget {
   const LulzTextFormField({
@@ -39,7 +38,7 @@ class LulzTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 20.h),
+      padding: const EdgeInsets.only(top: 20),
       child: TextFormField(
         inputFormatters: _inputFormatters,
         initialValue: _initValue,
@@ -62,19 +61,19 @@ class LulzTextFormField extends StatelessWidget {
           fillColor: LulzColors.textField,
           iconColor: LulzColors.black,
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.r),
+            borderRadius: BorderRadius.circular(25),
             borderSide: BorderSide(color: LulzColors.black),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.r),
+            borderRadius: BorderRadius.circular(25),
             borderSide: BorderSide(color: LulzColors.blue),
           ),
           errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.r),
+            borderRadius: BorderRadius.circular(25),
             borderSide: BorderSide(color: LulzColors.red),
           ),
           focusedErrorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.r),
+            borderRadius: BorderRadius.circular(25),
             borderSide: BorderSide(color: LulzColors.red),
           ),
         ),

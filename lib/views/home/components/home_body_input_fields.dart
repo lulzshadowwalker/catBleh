@@ -35,7 +35,10 @@ class HomeBodyInputFields extends StatelessWidget {
               LulzTextFormField(
                 hintText: 'CVV',
                 prefixIcon: const Icon(Icons.lock),
-                inputFormatters: [LengthLimitingTextInputFormatter(3)],
+                inputFormatters: [
+                  LengthLimitingTextInputFormatter(3),
+                  FilteringTextInputFormatter.digitsOnly,
+                ],
               )
             ],
           ),
