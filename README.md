@@ -4,7 +4,7 @@
 Dummy project it's not meant to be really "functional" by any means.<br>
 for the lulz.<br>
 Shitty code that just "works".<br>
-I couldn't have possibly wrote shittier code if I tried<br>
+I couldn't have possibly written shittier code if I tried<br>
 
 ## Table of Contents
 - [Supported platforms](#supported-platforms)
@@ -14,6 +14,8 @@ I couldn't have possibly wrote shittier code if I tried<br>
 
 ## Supported platforms
 -   Windows
+![CODE RESULTS](https://user-images.githubusercontent.com/92385434/166741905-3b793c9d-03ae-498b-a2b8-ec403bbddd46.png)
+
 
 ## Installation
 either:
